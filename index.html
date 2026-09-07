@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dave Neil Dela Cruz — Application Summary</title>
+<style>
+  :root{
+    --ink:#1b2430;
+    --paper:#f6f5f1;
+    --card:#ffffff;
+    --line:#dfdcd3;
+    --accent:#2f6f5e;
+    --accent-soft:#e4efe9;
+    --muted:#6b7280;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Georgia','Iowan Old Style',serif;
+    line-height:1.55;
+    padding:0 0 60px 0;
+  }
+  .topband{
+    background:var(--ink);
+    color:var(--paper);
+    padding:28px 20px 24px;
+  }
+  .topband .kicker{
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    font-size:12.5px;
+    letter-spacing:.04em;
+    color:#b9c2ba;
+    margin:0 0 6px 0;
+  }
+  .topband h1{
+    margin:0;
+    font-size:26px;
+    font-weight:600;
+    line-height:1.25;
+  }
+  .topband .role{
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    font-size:14px;
+    color:#cfd6d1;
+    margin-top:8px;
+  }
+
+  .contactbar{
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px 16px;
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    font-size:13px;
+    color:var(--muted);
+    padding:16px 20px;
+    background:var(--card);
+    border-bottom:1px solid var(--line);
+  }
+  .contactbar span{white-space:nowrap;}
+
+  main{
+    max-width:720px;
+    margin:0 auto;
+    padding:0 20px;
+  }
+
+  .section{
+    margin-top:28px;
+  }
+  .section-title{
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    font-size:12.5px;
+    font-weight:700;
+    color:var(--accent);
+    letter-spacing:.02em;
+    margin:0 0 12px 0;
+    padding-bottom:8px;
+    border-bottom:2px solid var(--accent-soft);
+  }
+
+  .infogrid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+  @media(min-width:520px){
+    .infogrid{grid-template-columns:1fr 1fr;}
+  }
+  .infoitem{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:10px 14px;
+  }
+  .infoitem .label{
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    font-size:11px;
+    color:var(--muted);
+    text-transform:uppercase;
+    letter-spacing:.03em;
+    display:block;
+    margin-bottom:3px;
+  }
+  .infoitem .value{
+    font-size:15px;
+  }
+
+  .taglist{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .tag{
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    font-size:13px;
+    background:var(--accent-soft);
+    color:var(--accent);
+    padding:6px 12px;
+    border-radius:20px;
+    border:1px solid #cfe4da;
+  }
+
+  .qa{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-left:4px solid var(--accent);
+    border-radius:4px;
+    padding:16px 18px;
+    margin-bottom:14px;
+  }
+  .qa .q{
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    font-size:13.5px;
+    font-weight:700;
+    color:var(--ink);
+    margin:0 0 8px 0;
+  }
+  .qa .a{
+    font-size:15.5px;
+    color:#31394a;
+    margin:0;
+    white-space:pre-line;
+  }
+
+  .projectcard{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:16px 18px;
+    margin-bottom:12px;
+  }
+  .projectcard h3{
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    font-size:15px;
+    margin:0 0 6px 0;
+    color:var(--accent);
+  }
+  .projectcard p{
+    margin:6px 0;
+    font-size:15px;
+  }
+  .projectcard .toolline{
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    font-size:12.5px;
+    color:var(--muted);
+    margin-top:8px;
+  }
+
+  ol.preflist{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:14px 18px 14px 34px;
+    margin:0;
+  }
+  ol.preflist li{
+    font-size:15px;
+    margin-bottom:6px;
+  }
+
+  footer{
+    max-width:720px;
+    margin:36px auto 0;
+    padding:0 20px;
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    font-size:12px;
+    color:var(--muted);
+    text-align:center;
+  }
+
+  @media print{
+    .topband{background:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topband">
+  <p class="kicker">JOB APPLICATION — SAGOT SUMMARY</p>
+  <h1>Dave Neil Dela Cruz</h1>
+  <div class="role">Jr./Sr. Backend Programmer &middot; Kooapps Philippines &middot; Makati City</div>
+</div>
+
+<div class="contactbar">
+  <span>✉️ dave.work.official23@gmail.com</span>
+  <span>📱 09091429796</span>
+  <span>🎂 07/02/2001</span>
+  <span>🇵🇭 Filipino</span>
+</div>
+
+<main>
+
+  <div class="section">
+    <p class="section-title">PERSONAL INFORMATION</p>
+    <div class="infogrid">
+      <div class="infoitem"><span class="label">Nickname</span><span class="value">Dave</span></div>
+      <div class="infoitem"><span class="label">Siblings</span><span class="value">0</span></div>
+      <div class="infoitem"><span class="label">Present Address</span><span class="value">28 Ilocos Sur St., Brgy. Ramon Magsaysay, Bago Bantay, Quezon City, 1105 Metro Manila, Philippines</span></div>
+      <div class="infoitem"><span class="label">Permanent Address</span><span class="value">Jose Abad Santos, Pinagpanaan, Talavera, Nueva Ecija</span></div>
+      <div class="infoitem"><span class="label">School / Batch</span><span class="value">Nueva Ecija University of Science and Technology, Batch 2026</span></div>
+      <div class="infoitem"><span class="label">Average Grade</span><span class="value">85% (GWA: 2.1)</span></div>
+      <div class="infoitem"><span class="label">Last Employer</span><span class="value">Manpower Org — Merchandiser</span></div>
+      <div class="infoitem"><span class="label">Pending Applications sa Ibang Game Company</span><span class="value">None</span></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-title">PROGRAMMING LANGUAGES / SKILLS</p>
+    <div class="taglist">
+      <span class="tag">C Languages (C / C# / C++ / Obj C)</span>
+      <span class="tag">Java</span>
+      <span class="tag">PHP</span>
+      <span class="tag">CSS</span>
+      <span class="tag">HTML</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">MySQL</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-title">ESSAY / OPEN-ENDED QUESTIONS</p>
+
+    <div class="qa">
+      <p class="q">Q: How would you describe yourself?</p>
+      <p class="a">Hi, I am Dave Neil Dela Cruz. I am a dedicated and responsible IT graduate from Nueva Ecija University of Science and Technology. I am always eager to learn new things in technology. In fact, during college, I balanced my time working while studying just to earn my degree. That experience taught me how to be consistent, motivated, and highly disciplined in everything I do. I have a strong passion for technology, databases, and programming languages. I love creating, building, and maintaining systems which I proved when I led our Capstone project to develop a full-cycle HR and Attendance Management System. I am very excited about the Junior Backend Programmer role here at Kooapps because I know your paid training program will help me grow my skills while I contribute my dedication to your team.</p>
+    </div>
+
+    <div class="qa">
+      <p class="q">Q: What are your major strengths and weakness?</p>
+      <p class="a">My Strength: My major strength is my relentless determination. I believe in doing whatever it takes, putting in the hard work, and staying focused until I achieve the exact result and goal that I set out to do. I don't stop until the job is successfully done.
+
+My Weakness: My biggest weakness before was self-doubt and fear. When I was appointed as our Capstone Project Leader, I was terrified because I was also working at that time. I was scared that I wouldn't have enough time and that we wouldn't finish our system. However, my passion for my dreams and my willingness to learn pushed me forward. I overcame that fear, managed my time tightly, and we successfully finished and delivered our system.</p>
+    </div>
+
+    <div class="qa">
+      <p class="q">Q: What kind of people do you find it most difficult to work with? Why?</p>
+      <p class="a">I find it most difficult to work with people who lack communication or refuse to collaborate, especially under tight deadlines. During our Capstone project, I handled a team of four where members had different challenges — one struggled with time management due to personal schedules, while the others lacked the technical knowledge and self-discipline to code on their own. Because of this, I had to step up, take full ownership, and code the majority of the backend system myself to ensure we met our graduation deadline. That experience taught me the value of extreme accountability. Instead of getting frustrated, I learned how to manage different types of people, adjust tasks based on what they could actually do, and double my personal effort to deliver the system successfully.</p>
+    </div>
+
+    <div class="qa">
+      <p class="q">Q: What do you like to do best and least?</p>
+      <p class="a">What I like to do best: What I like to do best is database architecture and designing Entity-Relationship Diagrams (ERDs). During our Capstone project, I heavily focused on structuring our database because I enjoy planning how data will flow logically and securely within a system. I find it very satisfying to build a solid database foundation before writing any backend logic.
+
+What I like to do least: What I like to do least is coding repetitive syntax from scratch under intense time constraints. Since I was balancing work and studies during college, I found it challenging to manually code everything within limited hours, so I often leveraged AI tools to help me accelerate the coding process and debug faster. While I am still sharpening my pure coding skills, using these technical tools taught me how to be resourceful and find efficient solutions quickly.</p>
+    </div>
+
+    <div class="qa">
+      <p class="q">Q: What is/are your greatest achievements?</p>
+      <p class="a">My greatest achievement is successfully finishing my Bachelor's degree in Information Technology, despite my initial doubts. During my first year, I was completely unmotivated because my original dream was to become a police officer or a teacher. However, as the semesters passed, I began to see the immense value, beauty, and practical impact of technology. I shifted my mindset, found my passion, and became highly focused on my studies. Graduating as a proud BSIT student while balancing work at the same time is my proudest moment because it proved to me that with dedication, I can adapt, excel, and fall in love with a field that I now want to build a lifelong career in.</p>
+    </div>
+
+    <div class="qa">
+      <p class="q">Q: Where did you learn about Kooapps?</p>
+      <p class="a">(Walang nakalagay na sagot sa form na ito.)</p>
+    </div>
+
+    <div class="qa">
+      <p class="q">Q: What do you wish to gain from this company?</p>
+      <p class="a">I wish to gain valuable enterprise-level experience and deep technical knowledge that I can carry with me throughout my career. I am very eager to learn about your advanced software tools and development practices, especially through your intensive training program. Most importantly, I want to fully contribute my dedication and skills to help build successful projects and be an impactful part of the Kooapps team.</p>
+    </div>
+
+    <div class="qa">
+      <p class="q">Q: What would you like to achieve within five (5) years?</p>
+      <p class="a">Within the next five years, I envision myself still with Kooapps, continuously learning and growing alongside the company. My goal is to transition from a junior programmer into a senior backend developer who deeply understands your systems. I want to use the skills I have mastered here to consistently deliver high-quality outputs and successfully lead engineering projects that will support the company's long-term growth.</p>
+    </div>
+
+    <div class="qa">
+      <p class="q">Q: Do you have experience in making games/mobile apps (Xcode and/or Android Studio)?</p>
+      <p class="a">Yes</p>
+    </div>
+
+  </div>
+
+  <div class="section">
+    <p class="section-title">DEVELOPER EXPERIENCE / PROJECTS</p>
+
+    <div class="projectcard">
+      <h3>1. Integrated HR and Attendance Management System (Capstone Project)</h3>
+      <p>Group project na may apat na miyembro; siya ang lead at nag-code ng majority ng backend logic at database architecture dahil may technical limitations ang ibang teammates. Full-cycle enterprise system na ginawa para i-track ang employee records at real-time attendance, at para palitan ang manual attendance tracking — binabawasan ang paperwork, iniiwasan ang human errors sa pag-compute ng oras ng empleyado, at pinapanatiling secure ang mga logs sa database.</p>
+      <p class="toolline">Tools: PHP, JavaScript, MS SQL Server, HTML, CSS</p>
+    </div>
+
+    <div class="projectcard">
+      <h3>2. Mobile Booking System Application (2nd Year Project)</h3>
+      <p>Ginawa gamit ang Ionic framework para mag-streamline ng appointment bookings. Project para sa mobile development class, layuning ipakita kung paano ma-handle ng simpleng app ang appointment bookings gamit ang local frontend code sa localhost server. Nagbigay ito ng malakas na foundational knowledge sa mobile UI layouts at client-server data binding. Wala nang source code files dahil sa hard drive failure ng dati niyang computer.</p>
+      <p class="toolline">Tools: Ionic Framework, JavaScript, HTML, CSS (Tested on localhost)</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <p class="section-title">OTHER PREFERRED POSITIONS (RANKED)</p>
+    <ol class="preflist">
+      <li>Mobile Game Programmer</li>
+      <li>Mobile App Programmer</li>
+      <li>Backend Programmer</li>
+      <li>QA Tester / Engineer</li>
+      <li>Project Manager</li>
+      <li>Data Analyst</li>
+      <li>Artist — Multimedia / 3D / UIUX / Illustrator</li>
+      <li>Marketing — Campaign Specialist, Digital Marketing Staff</li>
+      <li>Recruiter</li>
+      <li>None</li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <p class="section-title">REFERRAL BONUS</p>
+    <div class="qa">
+      <p class="a">None at the moment.</p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  Application summary — Jr./Sr. Backend Programmer, Kooapps Philippines
+</footer>
+
+</body>
+</html>
